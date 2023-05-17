@@ -25,6 +25,7 @@ namespace UC12_Jogo_da_Memoria
         string figura11 = "?";
         string figura12 = "?";
         int vida = 0;
+        int mensagem = 0;
         public Form1()
         {
             InitializeComponent();
@@ -112,6 +113,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox1.Enabled = false;
                 pictureBox5.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -134,6 +136,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox2.Enabled = false;
                 pictureBox8.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -156,6 +159,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox3.Enabled = false;
                 pictureBox9.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -178,6 +182,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox4.Enabled = false;
                 pictureBox10.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -200,6 +205,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox1.Enabled = false;
                 pictureBox5.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -222,6 +228,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox6.Enabled = false;
                 pictureBox11.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -244,6 +251,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox7.Enabled = false;
                 pictureBox12.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -266,6 +274,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox2.Enabled = false;
                 pictureBox8.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -288,6 +297,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox3.Enabled = false;
                 pictureBox9.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -310,6 +320,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox4.Enabled = false;
                 pictureBox10.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -332,6 +343,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox6.Enabled = false;
                 pictureBox11.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -354,6 +366,7 @@ namespace UC12_Jogo_da_Memoria
             {
                 pictureBox7.Enabled = false;
                 pictureBox12.Enabled = false;
+                mensagem++;
             }
             vida++;
             cliques();
@@ -361,10 +374,10 @@ namespace UC12_Jogo_da_Memoria
         }
         public void ganhou()
         {
-            if (figura1 == "f" && figura2 == "f" && figura3 == "f" && figura4 == "f" && figura5 == "f" && figura6 == "f" && figura7 == "f" && figura8 == "f" && figura9 == "f" && figura10 == "f" && figura11 == "f" && figura12 == "f")
+            if (mensagem == 6)
             {
                 labelMENSAGEM.Text = "Você conseguiu, parabéns!";
-                labelMENSAGEM.BackColor = Color.Green;
+                labelMENSAGEM.ForeColor = Color.Green;
             }
         }
     }

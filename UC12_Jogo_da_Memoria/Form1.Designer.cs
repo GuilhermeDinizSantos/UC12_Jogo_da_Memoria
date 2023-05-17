@@ -190,9 +190,10 @@
             // labelMENSAGEM
             // 
             this.labelMENSAGEM.AutoSize = true;
-            this.labelMENSAGEM.Location = new System.Drawing.Point(12, 500);
+            this.labelMENSAGEM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline);
+            this.labelMENSAGEM.Location = new System.Drawing.Point(12, 496);
             this.labelMENSAGEM.Name = "labelMENSAGEM";
-            this.labelMENSAGEM.Size = new System.Drawing.Size(59, 13);
+            this.labelMENSAGEM.Size = new System.Drawing.Size(88, 20);
             this.labelMENSAGEM.TabIndex = 12;
             this.labelMENSAGEM.Text = "Mensagem";
             // 
